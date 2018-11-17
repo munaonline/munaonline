@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Product Detail</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/elegant-font/html-css/style.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+
+</head>
+<style>
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #f29c93;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f29c93;
+	box-shadow:inset 0px 1px 0px 0px #f29c93;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #ce0100));
+	background:-moz-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background:-webkit-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background:-o-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background:-ms-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100',GradientType=0);
+	background-color:#fe1a00;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	border:1px solid #d83526;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ce0100), color-stop(1, #fe1a00));
+	background:-moz-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+	background:-webkit-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+	background:-o-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+	background:-ms-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+	background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0100', endColorstr='#fe1a00',GradientType=0);
+	background-color:#ce0100;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+</style>
+<body class="animsition">
+
+	<!-- Header -->
+	<header class="header1">
+		<!-- Header desktop -->
+		<div class="container-menu-header">
+			<div class="topbar">
+				<div class="topbar-social">
+					<a href="https://web.facebook.com/Muna-shop-210396103067668/" class="topbar-social-item fa fa-facebook"></a>
+					<a href="https://www.instagram.com/muna.online.store/" class="topbar-social-item fa fa-instagram"></a>
+
+				</div>
+
+				<span class="topbar-child1">
+					Free shipping any where in Male'.
+				</span>
+			</div>
+
+			<div class="wrap_header">
+				<!-- Logo -->
+				<a href="index.html" class="logo">
+					<img src="images/icons/logo.png" alt="IMG-LOGO">
+				</a>
+
+				<!-- Menu -->
+				<div class="wrap_menu">
+					<nav class="menu">
+						<ul class="main_menu">
+							<li>
+								<a href="index.html">Home</a>
+								
+							</li>
+
+							<li>
+								<a href="product.html">Items</a>
+							</li>
+
+							
+						</ul>
+					</nav>
+				</div>
+
+				
+			</div>
+		</div>
+
+		<!-- Header Mobile -->
+		<div class="wrap_header_mobile">
+			<!-- Logo moblie -->
+			<a href="index.html" class="logo-mobile">
+				<img src="images/icons/logo.png" alt="IMG-LOGO">
+			</a>
+
+			<!-- Button show menu -->
+		<div class="btn-show-menu">
+				<!-- Header Icon mobile -->
+			<div class="header-icons-mobile">
+			
+
+				<div class="btn-show-menu-mobile hamburger hamburger--squeeze">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<!-- Menu Mobile -->
+		<div class="wrap-side-menu" >
+			<nav class="side-menu">
+				<ul class="main-menu">
+					<li class="item-topbar-mobile p-l-20 p-t-8 p-b-8">
+						<span class="topbar-child1">
+							Free shipping any where in Male'.
+						</span>
+					</li>
+
+					<li class="item-topbar-mobile p-l-20 p-t-8 p-b-8">
+						<div class="topbar-child2-mobile">
+												<a href="#" class="header-wrapicon1 dis-block">
+						<img src="images/icons/dell.png" class="header-icon1" alt="ICON">
+					</a>
+
+					<span class="linedivide2"></span>
+
+				<div class="header-wrapicon2">
+						<img src="images/icons/bml.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
+
+				</div>
+
+
+						<p>we accept BML transfer & Cash on delivery</p>
+						</div>
+					</li>
+<center>
+					<li class="item-topbar-mobile p-l-10">
+					
+						<div class="topbar-social-mobile">
+							<a href="https://web.facebook.com/Muna-shop-210396103067668/" class="topbar-social-item fa fa-facebook"></a>
+							<a href="#" class="topbar-social-item fa fa-instagram"></a>
+					
+
+						</div>
+					</li>
+</center>
+					<li class="item-menu-mobile">
+						<a href="index.html">Home</a>
+				    </li>
+
+					<li class="item-menu-mobile">
+						<a href="product.html">Shop</a>
+					</li>
+
+
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!------------------------------ photo list -------------------------------------->
+	
+	
+	
+	
+	
+	
+	<div class="container bgwhite p-t-35 p-b-80">
+		
+					
+	<div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="images/shawl_1.jpg">
+               <img src="images/shawl_1.jpg" alt="Cinque Terre" width="600" height="400">
+           </a>
+        <div class="w-size14 p-t-30 respon5">
+				<h4 class="product-detail-name m-text16 p-b-13">
+					Plan Shawls
+				</h4>
+
+				<span class="m-text17">
+					MVR 55  
+				</span>
+
+				<p class="s-text8 p-t-10">
+					Size: 180×75cm
+				</p>
+				<p class="s-text8 p-t-10">
+					Colour: 40 colours available
+				</p>
+				<p class="s-text8 p-t-10">
+					Colour: 40 colours available
+				</p>
+				           <!------------------------------- online order buttion ------------------------------->
+				
+		                	<a href="order.html" class="myButton">Order Online</a>
+							
+                           <!------------------------------- online order buttion ------------------------------->
+						   <br></br>
+        </div>
+	
+	
+        <div class="gallery">
+            <a target="_blank" href="images/shawl_2.jpg">
+               <img src="images/shawl_2.jpg" alt="Cinque Terre" width="600" height="400">
+           </a>
+        <div class="w-size14 p-t-30 respon5">
+				<h4 class="product-detail-name m-text16 p-b-13">
+					Plan Shawls
+				</h4>
+
+				<span class="m-text17">
+					MVR 55  
+				</span>
+
+				<p class="s-text8 p-t-10">
+					Size: 180×75cm
+				</p>
+				<p class="s-text8 p-t-10">
+					Colour: 40 colours available
+				</p>
+				<p class="s-text8 p-t-10">
+					Colour: 40 colours available
+				</p>
+				           <!------------------------------- online order buttion ------------------------------->
+				
+		                	<a href="order.html" class="myButton">Order Online</a>
+							
+                           <!------------------------------- online order buttion ------------------------------->
+						   <br></br>
+				
+        </div>
+	
+	        <div class="gallery">
+            <a target="_blank" href="images/shawl_3.jpg">
+               <img src="images/shawl_3.jpg" alt="Cinque Terre" width="600" height="400">
+           </a>
+        <div class="w-size14 p-t-30 respon5">
+				<h4 class="product-detail-name m-text16 p-b-13">
+					Plan Shawls
+				</h4>
+
+				<span class="m-text17">
+					MVR 55  
+				</span>
+
+				<p class="s-text8 p-t-10">
+					Size: 180×75cm
+				</p>
+				<p class="s-text8 p-t-10">
+					Colour: 40 colours available
+				</p>
+				<p class="s-text8 p-t-10">
+					Colour: 40 colours available
+				</p>
+						 <!------------------------------- online order buttion ------------------------------->
+				
+		                	<a href="order.html" class="myButton">Order Online</a>
+							
+                           <!------------------------------- online order buttion ------------------------------->
+						   <br></br>
+        </div>
+	
+	        <div class="gallery">
+            <a target="_blank" href="images/shawl_4.jpg">
+               <img src="images/shawl_4.jpg" alt="Cinque Terre" width="600" height="400">
+           </a>
+        <div class="w-size14 p-t-30 respon5">
+				<h4 class="product-detail-name m-text16 p-b-13">
+					Plan Shawls
+				</h4>
+
+				<span class="m-text17">
+					MVR 55  
+				</span>
+
+				<p class="s-text8 p-t-10">
+					Size: 180×75cm
+				</p>
+				<p class="s-text8 p-t-10">
+					Colour: 40 colours available
+				</p>
+				<p class="s-text8 p-t-10">
+					Colour: 40 colours available
+				</p>
+				           <!------------------------------- online order buttion ------------------------------->
+				
+		                	<a href="order.html" class="myButton">Order Online</a>
+							
+                           <!------------------------------- online order buttion ------------------------------->
+						   <br></br>
+        </div>
+	
+	        <div class="gallery">
+            <a target="_blank" href="images/shawl_5.jpg">
+               <img src="images/shawl_5.jpg" alt="Cinque Terre" width="600" height="400">
+           </a>
+        <div class="w-size14 p-t-30 respon5">
+				<h4 class="product-detail-name m-text16 p-b-13">
+					Plan Shawls
+				</h4>
+
+				<span class="m-text17">
+					MVR 55  
+				</span>
+
+				<p class="s-text8 p-t-10">
+					Size: 180×75cm
+				</p>
+				<p class="s-text8 p-t-10">
+					Colour: 40 colours available
+				</p>
+				<p class="s-text8 p-t-10">
+					Colour: 40 colours available
+				</p>
+				           <!------------------------------- online order buttion ------------------------------->
+				
+		                	<a href="order.html" class="myButton">Order Online</a>
+							
+                           <!------------------------------- online order buttion ------------------------------->
+						   <br></br>
+        </div>
+	
+	        <div class="gallery">
+            <a target="_blank" href="images/shawl_6.jpg">
+               <img src="images/shawl_6.jpg" alt="Cinque Terre" width="600" height="400">
+           </a>
+        <div class="w-size14 p-t-30 respon5">
+				<h4 class="product-detail-name m-text16 p-b-13">
+					Plan Shawls
+				</h4>
+
+				<span class="m-text17">
+					MVR 55  
+				</span>
+
+				<p class="s-text8 p-t-10">
+					Size: 180×75cm
+				</p>
+				<p class="s-text8 p-t-10">
+					Colour: 40 colours available
+				</p>
+				<p class="s-text8 p-t-10">
+					Colour: 40 colours available
+				</p>
+				           <!------------------------------- online order buttion ------------------------------->
+				
+		                	<a href="order.html" class="myButton">Order Online</a>
+							
+                           <!------------------------------- online order buttion ------------------------------->
+						   <br></br>
+        </div>
+	
+	        <div class="gallery">
+            <a target="_blank" href="images/shawl_7.jpg">
+               <img src="images/shawl_7.jpg" alt="Cinque Terre" width="600" height="400">
+           </a>
+        <div class="w-size14 p-t-30 respon5">
+				<h4 class="product-detail-name m-text16 p-b-13">
+					Plan Shawls
+				</h4>
+
+				<span class="m-text17">
+					MVR 55  
+				</span>
+
+				<p class="s-text8 p-t-10">
+					Size: 180×75cm
+				</p>
+				<p class="s-text8 p-t-10">
+					Colour: 40 colours available
+				</p>
+				<p class="s-text8 p-t-10">
+					Colour: 40 colours available
+				</p>
+				           <!------------------------------- online order buttion ------------------------------->
+				
+		                	<a href="order.html" class="myButton">Order Online</a>
+							
+                           <!------------------------------- online order buttion ------------------------------->
+						   <br></br>				
+        </div>
+	
+	        <div class="gallery">
+            <a target="_blank" href="images/shawl_8.jpg">
+               <img src="images/shawl_8.jpg" alt="Cinque Terre" width="600" height="400">
+           </a>
+        <div class="w-size14 p-t-30 respon5">
+				<h4 class="product-detail-name m-text16 p-b-13">
+					Plan Shawls
+				</h4>
+
+				<span class="m-text17">
+					MVR 55  
+				</span>
+
+				<p class="s-text8 p-t-10">
+					Size: 180×75cm
+				</p>
+				<p class="s-text8 p-t-10">
+					Colour: 40 colours available
+				</p>
+				<p class="s-text8 p-t-10">
+					Colour: 40 colours available
+				</p>
+				           <!------------------------------- online order buttion ------------------------------->
+				
+		                	<a href="order.html" class="myButton">Order Online</a>
+							
+                           <!------------------------------- online order buttion ------------------------------->
+						   <br></br>
+        </div>
+	
+	        <div class="gallery">
+            <a target="_blank" href="images/shawl_9.jpg">
+               <img src="images/shawl_9.jpg" alt="Cinque Terre" width="600" height="400">
+           </a>
+        <div class="w-size14 p-t-30 respon5">
+				<h4 class="product-detail-name m-text16 p-b-13">
+					Plan Shawls
+				</h4>
+
+				<span class="m-text17">
+					MVR 55  
+				</span>
+
+				<p class="s-text8 p-t-10">
+					Size: 180×75cm
+				</p>
+				<p class="s-text8 p-t-10">
+					Colour: 40 colours available
+				</p>
+				<p class="s-text8 p-t-10">
+					Colour: 40 colours available
+				</p>
+				           <!------------------------------- online order buttion ------------------------------->
+				
+		                	<a href="order.html" class="myButton">Order Online</a>
+							
+                           <!------------------------------- online order buttion ------------------------------->
+						   <br></br>
+        </div>
+	
+	        <div class="gallery">
+            <a target="_blank" href="images/shawl_10.jpg">
+               <img src="images/shawl_10.jpg" alt="Cinque Terre" width="600" height="400">
+           </a>
+        <div class="w-size14 p-t-30 respon5">
+				<h4 class="product-detail-name m-text16 p-b-13">
+					Plan Shawls
+				</h4>
+
+				<span class="m-text17">
+					MVR 55  
+				</span>
+
+				<p class="s-text8 p-t-10">
+					Size: 180×75cm
+				</p>
+				<p class="s-text8 p-t-10">
+					Colour: 40 colours available
+				</p>
+				<p class="s-text8 p-t-10">
+					Colour: 40 colours available
+				</p>
+				           <!------------------------------- online order buttion ------------------------------->
+				
+		                	<a href="order.html" class="myButton">Order Online</a>
+							
+                           <!------------------------------- online order buttion ------------------------------->
+						   <br></br>
+        </div>
+	
+	        <div class="gallery">
+            <a target="_blank" href="images/shawl_11.jpg">
+               <img src="images/shawl_11.jpg" alt="Cinque Terre" width="600" height="400">
+           </a>
+        <div class="w-size14 p-t-30 respon5">
+				<h4 class="product-detail-name m-text16 p-b-13">
+					Plan Shawls
+				</h4>
+
+				<span class="m-text17">
+					MVR 55  
+				</span>
+
+				<p class="s-text8 p-t-10">
+					Size: 180×75cm
+				</p>
+				<p class="s-text8 p-t-10">
+					Colour: 40 colours available
+				</p>
+				<p class="s-text8 p-t-10">
+					Colour: 40 colours available
+				</p>
+				           <!------------------------------- online order buttion ------------------------------->
+				
+		                	<a href="order.html" class="myButton">Order Online</a>
+							
+                           <!------------------------------- online order buttion ------------------------------->
+						   <br></br>
+        </div>
+	
+	
+					
+				
+						
+					</div>
+				</div>
+			</div>
+	<!------------------------------ photo list -------------------------------------->
+	
+	
+	
+	
+	
+	
+			
+			
+			
+			
+			
+							
+		
+			
+			
+	<!-- name and price -->
+				
+			<div class="w-size14 p-t-30 respon5">
+				<h4 class="product-detail-name m-text16 p-b-13">
+					Plan Shawls
+				</h4>
+
+				<span class="m-text17">
+					MVR 55  
+				</span>
+
+				<p class="s-text8 p-t-10">
+					Size: 180×75cm
+				</p>
+				<p class="s-text8 p-t-10">
+					Colour: 40 colours available
+				</p>
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+				
+				
+				
+			
+	<!---------------------------------------------- delivery ----------------------------------------->
+	<section class="shipping bgwhite p-t-62 p-b-46">
+		<div class="flex-w p-l-15 p-r-15">
+			<div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 respon1">
+				<h4 class="m-text12 t-center">
+					Free Delivery anywhere in Male'
+				</h4>
+
+				<a  class="s-text11 t-center">
+					even any where in maldives with a delivery charge
+				</a>
+			</div>
+
+			<div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 bo2 respon2">
+				<h4 class="m-text12 t-center">
+					 24Hrs return
+				</h4>
+
+				<span class="s-text11 t-center">
+					Simply return it within 24Hrs for an exchange.
+				</span>
+			</div>
+
+			<div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 respon1">
+				<h4 class="m-text12 t-center">
+					Our Service hours
+				</h4>
+
+				<span class="s-text11 t-center">
+					Service available 7 day a week between 6 AM to 12 PM
+				</span>
+			</div>
+		</div>
+	</section>
+
+
+	
+	
+	
+	<!----------------------------------------------- Footer --------------------------------------->
+	<footer class="bg6 p-t-45 p-b-43 p-l-45 p-r-45">
+		<div class="flex-w p-b-90">
+			<div class="w-size6 p-t-30 p-l-15 p-r-15 respon3">
+				<h4 class="s-text12 p-b-30">
+					GET IN TOUCH
+				</h4>
+
+				<div>
+				<h3>Any questions?</h3>
+				<br>
+				</br>
+					<p class="s-text7 w-size27">
+						 call us on _<a href="tel:+960-9953003">(+960) 9953003</a>
+					</p>
+					
+					<p class="s-text7 w-size27">
+						Viber us @ _ <a href="viber://chat?number=9953003">9953003</a>
+					</p>
+					
+					<p class="s-text7 w-size27">
+						 E-mail us @_ <a href="mailto:muna.online.shop@gmail.com?Subject=Hello%20again" target="_top">muna.online.shop@gmail.com</a>
+					</p>
+
+					<br>
+				</br>
+				<p class="s-text7 w-size27">
+						 please dont forget to like & follow
+					</p>
+					<div class="flex-m p-t-30">
+					
+						<a href="https://web.facebook.com/Muna-shop-210396103067668/" class="topbar-social-item fa fa-facebook"></a>
+					<a href="https://www.instagram.com/muna.online.store/" class="topbar-social-item fa fa-instagram"></a>
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
+				<h4 class="s-text12 p-b-30">
+					Categories
+				</h4>
+
+				<ul>
+					<li class="p-b-9">
+						<a href="shawl.html" class="s-text7">
+							Shawl
+						</a>
+					</li>
+
+					<li class="p-b-9">
+						<a href="lipstick.html" class="s-text7">
+							lipstick
+						</a>
+					</li>
+
+					<li class="p-b-9">
+						<a href="buruga.html" class="s-text7">
+							muna SP Buruga
+						</a>
+					</li>
+
+					<li class="p-b-9">
+						<a href="fothi.html" class="s-text7">
+							Fothi
+						</a>
+					</li>
+					
+					<li class="p-b-9">
+						<a href="#" class="s-text7">
+							.
+						</a>
+					</li>
+					
+					<li class="p-b-9">
+						<a href="#" class="s-text7">
+							.
+						</a>
+					</li>
+					
+					<li class="p-b-9">
+						<a href="#" class="s-text7">
+							.
+						</a>
+					</li>
+					
+					<li class="p-b-9">
+						<a href="#" class="s-text7">
+							.
+						</a>
+					</li>
+					
+				</ul>
+			</div>
+
+			</div>
+
+			
+
+				</form>
+			</div>
+		</div>
+
+		<div class="t-center p-l-15 p-r-15">
+			<div class="t-center s-text8 p-t-20">
+				Copyright © 2018 All rights reserved. | adhu haam</a>
+			</div>
+		</div>
+	</footer>
+	
+				
+				
+				
+				
+				
+				
+				
+				
+				
+	
+
+	<!--------------------------------- Back to top --------------------------------->
+	<div class="btn-back-to-top bg0-hov" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+		</span>
+	</div>
+
+	<!-- Container Selection -->
+	<div id="dropDownSelect1"></div>
+	<div id="dropDownSelect2"></div>
+
+
+
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
+	<script type="text/javascript">
+		$(".selection-1").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect2')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/slick-custom.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/sweetalert/sweetalert.min.js"></script>
+	<script type="text/javascript">
+		$('.block2-btn-addcart').each(function(){
+			var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
+			$(this).on('click', function(){
+				swal(nameProduct, "is added to cart !", "success");
+			});
+		});
+
+		$('.block2-btn-addwishlist').each(function(){
+			var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
+			$(this).on('click', function(){
+				swal(nameProduct, "is added to wishlist !", "success");
+			});
+		});
+
+		$('.btn-addcart-product-detail').each(function(){
+			var nameProduct = $('.product-detail-name').html();
+			$(this).on('click', function(){
+				swal(nameProduct, "is added to wishlist !", "success");
+			});
+		});
+	</script>
+
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
